@@ -1,1 +1,25 @@
-<p>my-education-details works!</p>
+<div class="form-group" [ngClass]="{'has error': myfather.controls.tenth.errors &&  myfather.controls.tenth.touched}">
+  <form [formGroup]="myfather">
+    <div>
+        <label for="tenth">Tenth:</label>
+        <input type="text" class="form-control" id="tenth" placeholder="Enter tenth" name="tenth" formControlName="tenth">
+        <span class="help-block" *ngIf="myfather.controls.tenth.errors &&  myfather.controls.tenth.touched">
+          <span *ngIf="myfather.controls.tenth.errors?.required">
+            Full Name is required
+          </span>
+      </span>
+  </div>
+      <label for="inter">Inter:</label>
+      <input type="text" class="form-control" id="inter" placeholder="Enter inter" name="inter" formControlName="inter">
+      <label for="Degree">Degree:</label>
+      <input type="text" class="form-control" id="Degree" placeholder="Enter Degree" name="Degree" formControlName="degree">
+      <div class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+      <!-- <button type="button"  class="btn btn-primary" [disabled]="!myfather.valid" (click)="Continue()" >Continue</button> -->
+  </form>
+</div>
+
+

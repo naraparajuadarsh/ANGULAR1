@@ -8,6 +8,7 @@ import { MyArchwizarComponent } from './my-archwizar/my-archwizar.component';
 import { MyPersonalDetailsComponent } from './my-personal-details/my-personal-details.component';
 import { MyEducationDetailsComponent } from './my-education-details/my-education-details.component';
 import { MyReviewDetailsComponent } from './my-review-details/my-review-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MyReviewDetailsComponent } from './my-review-details/my-review-details.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ArchwizardModule
+    ArchwizardModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
