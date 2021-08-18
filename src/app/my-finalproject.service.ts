@@ -9,9 +9,9 @@ export class MyFinalprojectService {
 
   constructor() { }
 
-  form(value:any):Observable<any>{
-    console.log(value)
-    this.objects.push(value)
-    return of(true)
-  }
+  // form(value:any):Observable<any>{
+  //   console.log(value)
+  //   this.objects.push(value)
+  //   return of(true)
+  // }
 }

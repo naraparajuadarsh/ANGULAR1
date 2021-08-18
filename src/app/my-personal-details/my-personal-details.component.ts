@@ -10,7 +10,7 @@ import { MyFinalprojectService } from '../my-finalproject.service';
 export class MyPersonalDetailsComponent implements OnInit {
   mypersonal:FormGroup;
   @Output() personDetails:EventEmitter<any>=new EventEmitter();
-  object:any=[];
+  // object:any=[];
 
   constructor(private myservice:MyFinalprojectService) { 
     this.mypersonal=new FormGroup({
