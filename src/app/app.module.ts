@@ -10,6 +10,7 @@ import { MyEducationDetailsComponent } from './my-education-details/my-education
 import { MyReviewDetailsComponent } from './my-review-details/my-review-details.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MyPersonalDetailsComponent,
     MyEducationDetailsComponent,
     MyReviewDetailsComponent
+    
   ],
   imports: [
     BrowserModule,
