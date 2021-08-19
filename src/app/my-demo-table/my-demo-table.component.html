@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead class="thead-dark bg-success">
+        <tr>
+            <th>Name</th>
+            <th>Id</th>
+            <th>Year</th>
+            <th>Color</th>
+            <th>Pantone_Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let object of objects">
+            <td>{{object.name}}</td>
+            <td>{{object.id}}</td>
+            <td>{{object.year}}</td>
+            <td>{{object.color}}</td>
+            <td>{{object.pantone_value}}</td>
+        </tr>
+    </tbody>
+</table>

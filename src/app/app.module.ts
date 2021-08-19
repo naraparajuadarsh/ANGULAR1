@@ -9,6 +9,8 @@ import { MyPersonalDetailsComponent } from './my-personal-details/my-personal-de
 import { MyEducationDetailsComponent } from './my-education-details/my-education-details.component';
 import { MyReviewDetailsComponent } from './my-review-details/my-review-details.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MyDemoTableComponent } from './my-demo-table/my-demo-table.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,14 +19,16 @@ import { ReactiveFormsModule } from '@angular/forms';
     MyArchwizarComponent,
     MyPersonalDetailsComponent,
     MyEducationDetailsComponent,
-    MyReviewDetailsComponent
+    MyReviewDetailsComponent,
+    MyDemoTableComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ArchwizardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
