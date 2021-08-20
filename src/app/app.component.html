@@ -16,6 +16,16 @@
         <li class="nav-item">
             <a routerLink="demotable" href=""class="nav-link" href="#"><b>demotable</b></a>
         </li>
+        <li class="nav-item">
+            <a routerLink="adarsh" href=""class="nav-link" href="#"><b>Adarsh</b></a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="personal1" href=""class="nav-link" href="#"><b>personal</b></a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="table1" href=""class="nav-link" href="#"><b>Table1</b></a>
+        </li>
     </ul>
 </nav>
+<div *ngIf="showLoadingIndicator" class="spinner"></div>
 <router-outlet></router-outlet>

@@ -11,6 +11,7 @@ import { MyReviewDetailsComponent } from './my-review-details/my-review-details.
 import { ReactiveFormsModule } from '@angular/forms';
 import { MyDemoTableComponent } from './my-demo-table/my-demo-table.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PhoneComponent } from './phone/phone.component';
 
 
 @NgModule({
@@ -20,8 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     MyPersonalDetailsComponent,
     MyEducationDetailsComponent,
     MyReviewDetailsComponent,
-    MyDemoTableComponent
-    
+    MyDemoTableComponent,
+    PhoneComponent
   ],
   imports: [
     BrowserModule,
