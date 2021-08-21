@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MyDemoTableComponent } from './my-demo-table/my-demo-table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PhoneComponent } from './phone/phone.component';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { PhoneComponent } from './phone/phone.component';
     MyEducationDetailsComponent,
     MyReviewDetailsComponent,
     MyDemoTableComponent,
-    PhoneComponent
+    PhoneComponent,
+    LifeCycleHooksComponent
   ],
   imports: [
     BrowserModule,

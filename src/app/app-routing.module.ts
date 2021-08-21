@@ -18,6 +18,7 @@ const routes: Routes = [
   {path:"education",component:MyEducationDetailsComponent,canDeactivate:[MyCanDeactiveGuardService]},
   {path:"demotable",component:MyDemoTableComponent,
   resolve:{employees:MyResolveGuardService}},
+  // module path
   {path: 'adarsh', loadChildren: './adarsh/adarsh.module#AdarshModule'},
   {path: 'phone', component:PhoneComponent},
   {path: 'personal1', loadChildren: './personal/personal.module#PersonalModule'},
@@ -27,7 +28,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{enableTracing: true})],
+  imports: [RouterModule.forRoot(routes,{enableTracing: false})],
   exports: [RouterModule],
   
 })
